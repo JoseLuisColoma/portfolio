@@ -11,7 +11,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
@@ -24,11 +24,11 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 .contenedor-header header .logo a{
     font-family: 'Quicksand';
-    font-size: 44px;
+    font-size: 36px;
     color: steelblue;
     text-decoration: none;
     font-weight: 900;
@@ -46,7 +46,7 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: whitesmoke;
+    color: peru;
 }
 .nav-responsive{
     background-color: steelblue;
@@ -59,9 +59,8 @@ html{
 }
 
 /* SECCION INICIO */
-
 .c-titulo{
-    color: steelblue;
+    color: peru;
     padding: 50px 20px;
 }
 .inicio{
@@ -75,12 +74,14 @@ html{
 }
 .inicio .contenido-banner{
     padding: 24px;
-    background-color: #1e2326;
-    max-width: 375px;
+    background-color: #1e2326 ;
+    max-width: 350px;
+    max-height: 600px;
     margin: auto;
     text-align: center;
+    align-items: center;
     border-radius: 40px;
-    margin-top: 65px;
+    margin-top: 75px;
 }
 .inicio .contenido-banner img{
     margin-top: 100px;
@@ -91,9 +92,10 @@ html{
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
+    margin-top: 20px;
+    font-size: 48px;
     font-family: 'Quicksand';
+    font-weight: 900;
 }
 .inicio .contenido-banner h2{
     font-size: 24px;
@@ -102,10 +104,10 @@ html{
     padding-bottom: 5px;
 }
 .inicio .contenido-banner .redes a{
-    color: #fff;
+    color: steelblue;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid steelblue;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -114,9 +116,91 @@ html{
     font-size: 20px;
     transition: .3s;
 }
+
 .inicio .contenido-banner .redes a:hover{
-    background-color: steelblue;
+    color: whitesmoke;
+    background-color: peru;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
 }
+
+/* SECCION PORTFOLIO */
+
+.portfolio{
+    background-color: #252A2E;
+    color: whitesmoke;
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Quicksand';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+    height: 240px;
+    width: 340px;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(steelblue, rgba(28,182,152,.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-family: 'Quicksand';
+    font-size: 22px;
+    margin-top:10px;
+    letter-spacing: 5px;
+    opacity: 0;
+    height: 240px;
+}
+.portfolio .galeria .proyecto .overlay h2{
+    font-size: 26px;
+    margin-bottom: 0px;
+    transition: 1s;
+    font-family: 'Quicksand';
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 0.9;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/* SECCION SOBRE MI  */
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -152,24 +236,26 @@ html{
 .sobremi .fila .col h3{
     font-size: 28px;
     font-family: 'Quicksand';
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .sobremi .fila .col ul{
     list-style: none;
 }
 .sobremi .fila .col ul li{
-    margin: 12px 0;
+    margin: 30px 0;
+    color:steelblue;
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: steelblue;
+    color: peru;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: steelblue;
-    padding: 3px;
+    background-color: peru;
+    padding: 8px;
     font-weight: bold;
     border-radius: 5px;
+    color: whitesmoke;
 }
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
@@ -178,7 +264,7 @@ html{
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
     height: 100px;
-    background-color: #252A2E;
+    background-color: steelblue;
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
@@ -186,361 +272,64 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: steelblue;
+    background-color: peru;
+
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid steelblue;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: steelblue;
     position: relative;
     z-index: 10;
-    border-radius: 10px;
+    border-radius: 6px;
 }
+
+.sobremi button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+    border-radius: 6px;
+}
+
 .sobremi button .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background-color: steelblue;
+    background-color: peru;
     z-index: -1;
     transition: 1s;
-    border-radius: 10px;
-
+    border-radius: 6px;
+    border-color: 2px solid whitesmoke;
+    color: whitesmoke;
 }
+
 .sobremi button:hover .overlay{
     width: 100%;
 }
-/* SECCION PORTFOLIO */
 
-.portfolio{
-    background-color: #252A2E;
-    color: whitesmoke;
-    padding: 50px 20px;
-}
-
-.portfolio .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.portfolio h2{
-    font-size: 48px;
-    font-family: 'Quicksand';
-    text-align: center;
-    padding: 20px 0;
-}
-.portfolio .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.portfolio .galeria .proyecto{
-    position: relative;
-    max-width: 340px;
-    height: fit-content;
-    margin: 10px;
-    cursor: pointer;
-}
-.portfolio .galeria .proyecto img{
-    width: 100%;
-    display: block;
-}
-.portfolio .galeria .proyecto .overlay{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: linear-gradient(steelblue, rgba(28,182,152,.5));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-family: 'Quicksand';
-    font-size: 22px;
-    margin-top:10px;
-    letter-spacing: 5px;
-    opacity: 0;
-}
-.portfolio .galeria .proyecto .overlay h3{
-    margin-bottom: 22px;
-    transition: 1s;
-}
-.portfolio .galeria .proyecto .overlay:hover{
-    opacity: 0.9;
-}
-.portfolio .galeria .proyecto .overlay:hover h3{
-    margin-bottom: 0px;
-}
-
-
-/* SECCION S K I L L S */
-.skills{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.skills h2{
-    font-size: 48px;
-    font-family: 'Quicksand';
-    text-align: center;
-    padding: 20px 0;
-
-}
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Quicksand';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: steelblue;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: steelblue;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
-/* SECCION CURRICULUM */
-.curriculum{
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 20px;
-}
-.curriculum .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.curriculum h2{
-    font-size: 48px;
-    font-family: 'Quicksand';
-    text-align: center;
-    padding: 20px 0;
-
-}
-.curriculum .fila{
-    display: flex;
-    justify-content: space-between;
-}
-.curriculum .fila .col{
-    width: 49%;
-    padding: 0 20px;
-}
-.curriculum .fila .col h3{
-    font-size: 28px;
-    font-family: 'Quicksand';
-    margin-bottom: 25px;
-}
-.curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
-}
-.curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
-}
-.curriculum .fila .item{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: #252A2E;
-    position: relative;
-}
-.curriculum .fila .item h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.curriculum .fila .item .casa{
-    color: steelblue;
-    font-size: 22px;
-    font-weight: bold;
-    display: block;
-}
-.curriculum .fila .item .fecha{
-    display: block;
-    color: steelblue;
-    margin-bottom: 10px;
-}
-.curriculum .fila .item p{
-    line-height: 24px;
-}
-.curriculum .fila .izq{
-    border-right: 2px solid steelblue;
-    margin-right: 20px;
-}
-.curriculum .fila .der{
-    border-left: 2px solid steelblue;
-    margin-left: 20px;
-}
-.curriculum .fila .item .conectori{
-    height: 2px;
-    background-color: steelblue;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    right: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectori .circuloi{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: steelblue;
-    float: right;
-    position: relative;
-    bottom: 4px;
-}
-.curriculum .fila .item .conectord{
-    height: 2px;
-    background-color: steelblue;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    left: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectord .circulod{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: steelblue;
-    float: left;
-    position: relative;
-    bottom: 4px;
-}
 
 /* SECCION CONTACTO */
 .contacto{
@@ -570,39 +359,66 @@ html{
 .contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
-    padding: 18px;
+    padding: 14px;
     border: none;
     margin-bottom: 20px;
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
 }
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid steelblue;
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: steelblue;
     position: relative;
     z-index: 10;
+    border-radius: 6px;
 }
+
+.contacto button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 10px 22px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+    border-radius: 6px;
+}
+
 .contacto button .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background-color: steelblue;
+    background-color: peru;
     z-index: -1;
     transition: 1s;
+    border-radius: 6px;
+    border-color: 2px solid whitesmoke;
+    color: whitesmoke;
 }
+
 .contacto button:hover .overlay{
     width: 100%;
 }
+
 .contacto .col img{
     width: 100%;
 }
@@ -611,21 +427,27 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .contacto .col .info ul{
     list-style: none;
 }
+
 .contacto .col .info ul li{
     margin-bottom: 20px;
 }
+
 .contacto .col .info ul li i{
     color: steelblue;
     display: inline-block;
     margin-right: 20px;
 }
+
+/* FOOTER */
+
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -634,14 +456,16 @@ footer{
     position: relative;
     width: 100%;
 }
+
 footer .redes{
     margin-bottom: 20px;
 }
-footer .redes a{
-    color: #fff;
+
+.inicio .contenido-banner .redes a{
+    color: steelblue;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid steelblue;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -649,7 +473,33 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+    margin-top: 40px;
 }
+
+
+footer .redes a{
+    color: steelblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid steelblue;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    margin-top: 40px;
+}
+
+footer .redes :hover{
+    color: whitesmoke;
+    background-color: peru;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
 footer .arriba{
     display: block;
     width: 50px;
@@ -664,6 +514,24 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+footer .arriba:hover{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: peru;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{

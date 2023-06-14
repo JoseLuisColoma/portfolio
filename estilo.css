@@ -59,6 +59,11 @@ html{
 }
 
 /* SECCION INICIO */
+
+.c-titulo{
+    color: steelblue;
+    padding: 50px 20px;
+}
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.6), rgba(30,35,38,1)),
     url(img/fondo.jpg);
@@ -126,8 +131,8 @@ html{
     font-family: 'Quicksand';
     text-align: center;
     padding: 20px 0;
-
 }
+
 .sobremi .contenido-seccion p{
     font: 18px;
     line-height: 22px;
@@ -200,6 +205,7 @@ html{
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 10px;
 }
 .sobremi button .overlay{
     position: absolute;
@@ -210,16 +216,20 @@ html{
     background-color: steelblue;
     z-index: -1;
     transition: 1s;
+    border-radius: 10px;
+
 }
 .sobremi button:hover .overlay{
     width: 100%;
 }
 /* SECCION PORTFOLIO */
+
 .portfolio{
     background-color: #252A2E;
     color: whitesmoke;
     padding: 50px 20px;
 }
+
 .portfolio .contenido-seccion{
     max-width: 1100px;
     margin: auto;

@@ -163,8 +163,6 @@ html{
 
 /* SECCION PORTFOLIO */
 
-/* SECCION PORTFOLIO */
-
 .c-portfolio {
     background-color: #252A2E;
     color: whitesmoke;
@@ -303,8 +301,23 @@ html{
 }
 
 .c-sobremi__contenedor-intereses {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.c-sobremi__interes {
+  width: calc(35% - 15px); /* Establece el ancho del interés con margen */
+  max-width: 150px; /* Establece un ancho máximo para evitar que se vuelvan demasiado grandes */
+  height: 100px;
+  background-color: steelblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
 }
 
 .c-sobremi__interes {
@@ -592,7 +605,16 @@ html{
         padding: 10px 0;
     }
 }
-@media screen and (max-width:700px){
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .c-sobremi__interes {
+      width: calc(50% - 15px);
+  }
+}
+
+
+@media screen and (max-width:768px){
     .c-sobremi .c-sobremi__fila{
         display: block;
     }

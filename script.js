@@ -29,7 +29,7 @@ function descargarCV() {
 
     // Descargar el archivo
     let enlace = document.createElement('a');
-    enlace.setAttribute('href', 'ruta/relativa/al/archivo/CV-JoseLuisColomaTormo01062023.pdf');
+    enlace.setAttribute('href', './CV-JoseLuisColomaTormo01062023.pdf');
     enlace.setAttribute('download', 'CV-JoseLuisColomaTormo01062023.pdf');
     enlace.style.display = 'none';
     document.body.appendChild(enlace);

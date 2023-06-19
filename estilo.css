@@ -11,76 +11,82 @@ html{
 }
 /* MENU */
 .c-contenedor-header {
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .c-header {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
 }
 
-.c-logo a {
-    font-family: 'Quicksand';
-    font-size: 36px;
-    color: steelblue;
-    text-decoration: none;
-    font-weight: 900;
+.c-logo {
+  font-family: 'Quicksand';
+  text-decoration: none;
+  font-weight: 900;
 }
 
-.c-logo-text {
-    font-size: 32px;
-    font-family: 'Quicksand';
-    margin-left: 10px;
-    color: peru;
+.c-logo__link {
+  font-size: 36px;
+  color: steelblue;
+  text-decoration: none;
 }
 
-.c-nav-list {
-    display: flex;
-    list-style: none;
+.c-logo__text {
+  font-size: 32px;
+  font-family: 'Quicksand';
+  margin-left: 10px;
+  color: peru;
 }
 
-.c-nav-item {
-    margin: 0 20px;
+.c-nav {
+  display: flex;
 }
 
-.c-nav-link {
-    text-align: none;
-    color: steelblue;
-    margin: 0;
-    padding: 0;
-    transition: .5s;
-    text-decoration: none;
+.c-nav__list {
+  display: flex;
+  list-style: none;
 }
 
-.c-nav-link:hover {
-    color: peru;
+.c-nav__item {
+  margin-right: 60px;
 }
 
-.c-lang-separator {
-    color: steelblue;
+.c-nav__link {
+  text-align: none;
+  color: steelblue;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  text-decoration: none;
 }
 
-.c-lang-text {
-    color: steelblue;
+.c-nav__link:hover {
+  color: peru;
 }
 
-.c-nav-responsive {
-    background-color: steelblue;
-    color: whitesmoke;
-    font-size: 24px;
-    padding: 6px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
+.c-lang {
+  color: steelblue;
+}
+
+.c-lang__es {
+  margin-right: 5px;
+}
+
+.c-lang__en {
+  margin-left: 5px;
+}
+
+.c-nav-reponsive{
+  display: none;
 }
 
 /* SECCION INICIO */
@@ -122,8 +128,7 @@ html{
     font-size: 48px;
     font-family: 'Quicksand';
     font-weight: 900;
-    color: peru
-    
+    color: peru;
 }
 
 .c-subtitulo {
@@ -565,7 +570,7 @@ html{
     line-height: 50px;
     font-size: 18px;
   }
-  
+
   .c-footer__arriba:hover {
     display: block;
     width: 50px;
@@ -580,33 +585,67 @@ html{
     line-height: 50px;
     font-size: 18px;
   }
-  
-  /* SECCION RESPONSIVE */
-@media screen and (max-width:980px){
-    .c-nav{
-        display: none;
-    }
-    .c-nav-responsive{
-        display: block;
-    }
-    .c-nav.responsive{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-    .c-nav.responsive ul{
-        display: block !important;
-    }
-    .c-nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-    }
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 980px) {
+  .c-nav__responsive {
+    display: none;
+  }
+
+  .c-nav__responsive-menu {
+    display: none;
+  }
+
+  .c-nav {
+    display: none;
+  }
+
+
+
+  .c-nav__responsive {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .c-nav__responsive:hover {
+    background-color: peru;
+  }
+
+  .c-nav__responsive-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .c-nav__responsive-menu.show {
+    display: block;
+  }
+
+  .c-nav__responsive-menu a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px;
+  }
 }
 
-/* Estilos para móviles */
+
+/* Estilos para móviles 
 @media (max-width: 768px) {
   .c-sobremi__interes {
       width: calc(50% - 15px);
@@ -638,3 +677,4 @@ html{
         width: 100%;
     }
 }
+*/

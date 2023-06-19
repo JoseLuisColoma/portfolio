@@ -1,245 +1,282 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-  <!-- MENU ENCABEZADO -->
-<div class="c-contenedor-header">
-    <header class="c-header">
-        <div class="c-logo">
-            <a href="#">JCT<span class="c-logo-text">DEV</span></a>
-        </div>
-        <nav class="c-nav" id="nav">
-            <ul class="c-nav-list">
-                <li class="c-nav-item">
-                    <a class="c-nav-link" href="#inicio" onclick="seleccionar()">INICIO</a>
-                </li>
-                <li class="c-nav-item">
-                    <a class="c-nav-link" href="#portfolio" onclick="seleccionar()">PORTFOLIO</a>
-                </li>
-                <li class="c-nav-item">
-                    <a class="c-nav-link" href="#curriculum" onclick="seleccionar()">TECNOLOGÍAS</a></li>
-                <li class="c-nav-item"><a class="c-nav-link" href="#sobremi" onclick="seleccionar()">SOBRE MI</a>
-                </li>
-                <li class="c-nav-item">
-                    <a class="c-nav-link" href="#contacto" onclick="seleccionar()">CONTACTO</a>
-                </li>
-                <li class="c-nav-item">
-                    <a class="c-nav-link" href="#inicio">ES</a><span class="c-lang-separator">|</span><a class="c-nav-link" href="#home"><span class="c-lang-text">EN</span></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="c-nav-responsive" onclick="mostrarOcultarMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </header>
-</div>
-
-   <!-- SECCION INICIO -->
-<div id="inicio" class="c-inicio">
-    <div class="c-contenido-banner">
-        <div class="c-contenedor-img">
-            <img src="img/hero.png" alt="">
-        </div>
-        <h1 class="c-titulo">JOSÉ LUIS COLOMA</h1>
-        <h2 class="c-subtitulo">Desarrollador FullStack</h2>
-        <h2 class="c-subtitulo">Programador</h2>
-        <div class="c-redes">
-            <a href="https://www.linkedin.com/in/jlcoloma/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/JoseLuisColoma"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-slack"></i></a>
-        </div>
-    </div>
-</div>
-
- <!-- SECCION PORTFOLIO -->
-<div id="portfolio" class="c-portfolio">
-    <div class="c-portfolio__content">
-      <h2 class="c-portfolio__titulo">PORTFOLIO</h2>
-      <div class="c-portfolio__gallery">
-        <div class="c-project">
-          <img src="img/educafe.jpg" alt="">
-          <div class="c-project__overlay">
-            <h4></h4>
-            <h2 class="c-project__title">EDUCAFÉ</h2>
-          </div>
-        </div>
-        <div class="c-project">
-          <img src="img/p2.jpg" alt="">
-          <div class="c-project__overlay">
-            <h5>SELECCIÓN DE</h5>
-            <h2 class="c-project__title">PROYECTOS</h2>
-          </div>
-        </div>
-        <div class="c-project">
-          <img src="img/p4.jpg" alt="">
-          <div class="c-project__overlay">
-            <h4></h4>
-            <h2 class="c-project__title">FREELANCE</h2>
-          </div>
-        </div>
-        <div class="c-project">
-          <img src="img/p8.jpg" alt="">
-          <div class="c-project__overlay">
-            <h5>EJERCICIOS DE</h5>
-            <h2 class="c-project__title">PROGRAMACIÓN</h2>
-          </div>
-        </div>
-        <div class="c-project">
-          <img src="img/p6.jpg" alt="">
-          <div class="c-project__overlay">
-            <h2 class="c-project__title">CODE CHALLENGE</h2>
-          </div>
-        </div>
-        <div class="c-project">
-          <img src="img/p7.jpg" alt="">
-          <div class="c-project__overlay">
-            <h4></h4>
-            <h2 class="c-project__title">FORMACIÓN</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-  
-
-  <!-- SECCION SOBRE MI -->
-<div id="sobremi" class="c-sobremi">
-    <div class="c-sobremi__contenido">
-        <h2 class="c-titulo">SOBRE MÍ</h2>
-        <p><span>Hola, soy José Luis.</span> Desarrollador web altamente motivado y enfocado en la creación de soluciones digitales de alto rendimiento.<br><br>
-            Actualmente, soy parte del equipo de desarrollo en Adding Technology, una destacada agencia de Transformación Digital y Desarrollo de Software. Aquí, estoy colaborando en la implementación exitosa de proyectos de software, y en la realización de proyectos desde el back-end con un enfoque Oracle y desarrollando con PLSQL.<br><br>
-            Mi formación y experiencia abarca el dominio de lenguajes como Java, JavaScript, PHP y PLSQL y tengo conocimientos de Typescript, Python, C++ y Go, así como el uso de frameworks y tecnologías web como Angular y Spring. Tengo un sólido conocimiento en el desarrollo front-end y back-end, y estoy familiarizado con Bases de Datos como MySQL, MongoDB y sobre todo Oracle, en la que estoy realizando en la actualidad mi desempeño como desarrollador.<br><br>        
-            Soy un apasionado en mantenerme actualizado con las últimas tendencias y avances en el mundo del desarrollo web. Poseo una mentalidad enfocada en soluciones, siendo capaz de analizar problemas complejos y ofrecer soluciones eficientes. Además, poseo habilidades demostradas de trabajo en equipo, comunicación efectiva y gestión de proyectos ágiles, puesto me he formado y tengo experiencia en el uso y gestión de tecnologías ágiles, como Scrum.<br><br>  
-            Si buscas un desarrollador web con gran capacidad de adaptarse rápidamente a nuevos entornos y con un enfoque orientado a la calidad, ¡no dudes en contactarme! Estoy abierto a nuevas oportunidades emocionantes y colaboraciones en el campo del desarrollo web.
-            <br><br>¡Muchas gracias!</p>
-
-        <div class="c-sobremi__fila">
-            <!-- datos personales -->
-            <div class="c-sobremi__col">
-                <h3 class="c-titulo">Datos Personales</h3>
-                <ul>
-                    <li>
-                        <strong>Email</strong>
-                        colomatormojl@gmail.com
+    <!-- MENÚ  -->
+    <div class="c-contenedor-header">
+        <header class="c-header">
+            <div class="c-logo">
+                <a href="#" class="c-logo c-logo__link">JCT<span class="c-logo c-logo__text">DEV</span></a>
+            </div>
+            <nav class="c-nav" id="nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#inicio" onclick="seleccionar()">INICIO</a>
                     </li>
-                    <li>
-                        <strong>Website</strong>
-                        www.jlctdev.com
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#portfolio" onclick="seleccionar()">PORTFOLIO</a>
                     </li>
-                    <li>
-                        <strong>Dirección</strong>
-                        Valencia, España
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#tecnologias" onclick="seleccionar()">TECNOLOGÍAS</a>
                     </li>
-                    <li>
-                        <strong>Cargo</strong>
-                        <span>Desarrollador/Programador</span>
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#sobremi" onclick="seleccionar()">SOBRE MI</a>
+                    </li>
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#contacto" onclick="seleccionar()">CONTACTO</a>
+                    </li>
+                    <li class="c-nav__item">
+                        <a class="c-lang c-lang__es" href="#inicio">ES</a>
+                        <span class="c-lang">|</span>
+                        <a class="c-lang c-lang__en" href="#home">
+                            <span class="c-lang c-lang__en">EN</span></a>
                     </li>
                 </ul>
+            </nav>
+            <!-- <div class="c-nav__responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div> -->
+            <!-- MENÚ DESPLEGABLE RESPONSIVO -->
+            <div class="c-nav__responsive-menu" id="responsiveMenu">
+                <a class="c-nav__link" href="#inicio" onclick="seleccionar()">INICIO</a>
+                <a class="c-nav__link" href="#portfolio" onclick="seleccionar()">PORTFOLIO</a>
+                <a class="c-nav__link" href="#tecnologias" onclick="seleccionar()">TECNOLOGÍAS</a>
+                <a class="c-nav__link" href="#sobremi" onclick="seleccionar()">SOBRE MI</a>
+                <a class="c-nav__link" href="#contacto" onclick="seleccionar()">CONTACTO</a>
             </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <div id="inicio" class="c-inicio">
+        <div class="c-contenido-banner">
+            <div class="c-contenedor-img">
+                <img src="img/yo.png" alt="">
+            </div>
+            <h1 class="c-titulo">JOSÉ LUIS COLOMA</h1>
+            <h2 class="c-subtitulo">Desarrollador FullStack</h2>
+            <h2 class="c-subtitulo">Programador</h2>
+            <div class="c-redes">
+                <a href="https://www.linkedin.com/in/jlcoloma/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/JoseLuisColoma"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-slack"></i></a>
+            </div>
+        </div>
+    </div>
 
-            <!-- intereses -->
-            <div class="c-sobremi__col">
-                <h3 class="c-titulo">Intereses</h3>
-                <div class="c-sobremi__contenedor-intereses">
-                    <div class="c-sobremi__interes">
-                        <i class="fa-solid fa-code"></i>
-                        <span>CODE</span>
+    <!-- SECCION PORTFOLIO -->
+    <div id="portfolio" class="c-portfolio">
+        <div class="c-portfolio__content">
+            <h2 class="c-portfolio__titulo">PORTFOLIO</h2>
+            <div class="c-portfolio__gallery">
+                <div class="c-project">
+                    <img src="img/educafe.jpg" alt="">
+                    <div class="c-project__overlay">
+                        <h4></h4>
+                        <h2 class="c-project__title">EDUCAFÉ</h2>
                     </div>
-                    <div class="c-sobremi__interes">
-                        <i class="fa-solid fa-chess-pawn"></i>
-                        <span>CHESS</span>
+                </div>
+                <div class="c-project">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="c-project__overlay">
+                        <h5>SELECCIÓN DE</h5>
+                        <h2 class="c-project__title">PROYECTOS</h2>
                     </div>
-                    <div class="c-sobremi__interes">
-                        <i class="fa-solid fa-plane"></i>
-                        <span>VIAJAR</span>
+                </div>
+                <div class="c-project">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="c-project__overlay">
+                        <h4></h4>
+                        <h2 class="c-project__title">FREELANCE</h2>
                     </div>
-                    <div class="c-sobremi__interes">
-                        <i class="fa-brands fa-apple"></i>
-                        <span>FOODIE</span>
+                </div>
+                <div class="c-project">
+                    <img src="img/p8.jpg" alt="">
+                    <div class="c-project__overlay">
+                        <h5>EJERCICIOS DE</h5>
+                        <h2 class="c-project__title">PROGRAMACIÓN</h2>
                     </div>
-                    <div class="c-sobremi__interes">
-                        <i class="fa-solid fa-basketball"></i>
-                        <span>SPORT</span>
+                </div>
+                <div class="c-project">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="c-project__overlay">
+                        <h2 class="c-project__title">CODE CHALLENGE</h2>
                     </div>
-                    <div class="c-sobremi__interes">
-                        <i class="fa-solid fa-book"></i>
-                        <span>LIBROS</span>
+                </div>
+                <div class="c-project">
+                    <img src="img/p7.jpg" alt="">
+                    <div class="c-project__overlay">
+                        <h4></h4>
+                        <h2 class="c-project__title">FORMACIÓN</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <button style="margin-top: 50px" class="c-sobremi__button" onclick="descargarCV()">
-            Descargar CV <i class="fa-solid fa-download" style="margin-left: 15px"></i>
-            <span class="c-overlay"></span>
-        </button>
-        
     </div>
-</div>
 
-   <!-- SECCION CONTACTO -->
-<!-- SECCION CONTACTO -->
-<section id="contacto" class="c-contacto">
-    <div class="c-contacto__contenido-seccion">
-        <h2 class="c-contacto__titulo">CONTACTO</h2>
-        <div class="c-contacto__fila">
-            <!-- Formulario -->
-            <form action="enviar_email.php" method="POST" class="c-contacto__col">
-                <input type="text" placeholder="Tu Nombre" class="c-contacto__input" name="nombre">
-                <input type="text" placeholder="Número telefónico" class="c-contacto__input" name="telefono">
-                <input type="text" placeholder="Dirección de correo" class="c-contacto__input" name="correo">
-                <input type="text" placeholder="Tema" class="c-contacto__input" name="tema">
-                <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" class="c-contacto__textarea"></textarea>
-                <button type="submit" class="c-contacto__boton">
-                    Enviar Mensaje<i class="fa-solid fa-paper-plane c-contacto__icono" style="margin-left:15px"></i><span class="c-contacto__overlay"></span>
+    <!-- SECCION INICIO -->
+    <div id="tecnologias" class="c-tecnologias">
+
+
+        <!-- SECCION SOBRE MI -->
+        <div id="sobremi" class="c-sobremi">
+            <div class="c-sobremi__contenido">
+                <h2 class="c-titulo">SOBRE MÍ</h2>
+                <p><span>Hola, soy José Luis.</span> Desarrollador web altamente motivado y enfocado en la creación de
+                    soluciones digitales de alto rendimiento.<br><br>
+                    Actualmente, soy parte del equipo de desarrollo en Adding Technology, una destacada agencia de
+                    Transformación Digital y Desarrollo de Software. Aquí, estoy colaborando en la implementación
+                    exitosa de proyectos de software, y en la realización de proyectos desde el back-end con un enfoque
+                    Oracle y desarrollando con PLSQL.<br><br>
+                    Mi formación y experiencia abarca el dominio de lenguajes como Java, JavaScript, PHP y PLSQL y tengo
+                    conocimientos de Typescript, Python, C++ y Go, así como el uso de frameworks y tecnologías web como
+                    Angular y Spring. Tengo un sólido conocimiento en el desarrollo front-end y back-end, y estoy
+                    familiarizado con Bases de Datos como MySQL, MongoDB y sobre todo Oracle, en la que estoy realizando
+                    en la actualidad mi desempeño como desarrollador.<br><br>
+                    Soy un apasionado en mantenerme actualizado con las últimas tendencias y avances en el mundo del
+                    desarrollo web. Poseo una mentalidad enfocada en soluciones, siendo capaz de analizar problemas
+                    complejos y ofrecer soluciones eficientes. Además, poseo habilidades demostradas de trabajo en
+                    equipo, comunicación efectiva y gestión de proyectos ágiles, puesto me he formado y tengo
+                    experiencia en el uso y gestión de tecnologías ágiles, como Scrum.<br><br>
+                    Si buscas un desarrollador web con gran capacidad de adaptarse rápidamente a nuevos entornos y con
+                    un enfoque orientado a la calidad, ¡no dudes en contactarme! Estoy abierto a nuevas oportunidades
+                    emocionantes y colaboraciones en el campo del desarrollo web.
+                    <br><br>¡Muchas gracias!
+                </p>
+
+                <div class="c-sobremi__fila">
+                    <!-- datos personales -->
+                    <div class="c-sobremi__col">
+                        <h3 class="c-titulo">Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Email</strong>
+                                colomatormojl@gmail.com
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                                www.jlctdev.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Valencia, España
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Desarrollador/Programador</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- intereses -->
+                    <div class="c-sobremi__col">
+                        <h3 class="c-titulo">Intereses</h3>
+                        <div class="c-sobremi__contenedor-intereses">
+                            <div class="c-sobremi__interes">
+                                <i class="fa-solid fa-code"></i>
+                                <span>CODE</span>
+                            </div>
+                            <div class="c-sobremi__interes">
+                                <i class="fa-solid fa-chess-pawn"></i>
+                                <span>CHESS</span>
+                            </div>
+                            <div class="c-sobremi__interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="c-sobremi__interes">
+                                <i class="fa-brands fa-apple"></i>
+                                <span>FOODIE</span>
+                            </div>
+                            <div class="c-sobremi__interes">
+                                <i class="fa-solid fa-basketball"></i>
+                                <span>SPORT</span>
+                            </div>
+                            <div class="c-sobremi__interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button style="margin-top: 50px" class="c-sobremi__button" onclick="descargarCV()">
+                    Descargar CV <i class="fa-solid fa-download" style="margin-left: 15px"></i>
+                    <span class="c-overlay"></span>
                 </button>
-            </form>
-            <!-- Mapa -->
-            <div class="c-contacto__col">
-                <img src="img/ubicacion.png" style="height:500px" alt="" class="c-contacto__imagen">
-                <div class="c-contacto__info">
-                    <ul class="c-contacto__lista">
-                        <li>
-                            <i class="fa-solid fa-location-dot c-contacto__icono-info"></i>
-                            Mislata - Valencia - España
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope c-contacto__icono-info"></i>
-                            colomatormojl@gmail.com
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </div>
-    </div>
-</section>
 
-<!-- footer -->
-<footer class="c-footer">
-    <a href="#inicio" class="c-footer__arriba">
-        <i class="fa-solid fa-angles-up"></i>
-    </a>
-    <div class="c-footer__redes">
-        <a href="https://www.linkedin.com/in/jlcoloma/"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/JoseLuisColoma"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-slack"></i></a>
-    </div>
-    <span style="margin-right: 5px; font-size: 10px;"><i class="fa-sharp fa-regular fa-copyright"></i></span>
-    <span style="font-size: 12px; margin-right: 5px;">2023</span>
-    <span style="color: steelblue; font-size: 20px; margin-bottom: 10px;">JCT</span>
-    <span style="color: peru; font-size: 14px; margin-left: 1px;">DEV</span>
-</footer>
+        <!-- SECCION CONTACTO -->
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="c-contacto">
+            <div class="c-contacto__contenido-seccion">
+                <h2 class="c-contacto__titulo">CONTACTO</h2>
+                <div class="c-contacto__fila">
+                    <!-- Formulario -->
+                    <form action="enviar_email.php" method="POST" class="c-contacto__col">
+                        <input type="text" placeholder="Tu Nombre" class="c-contacto__input" name="nombre">
+                        <input type="text" placeholder="Número telefónico" class="c-contacto__input" name="telefono">
+                        <input type="text" placeholder="Dirección de correo" class="c-contacto__input" name="correo">
+                        <input type="text" placeholder="Tema" class="c-contacto__input" name="tema">
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"
+                            class="c-contacto__textarea"></textarea>
+                        <button type="submit" class="c-contacto__boton">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane c-contacto__icono"
+                                style="margin-left:15px"></i><span class="c-contacto__overlay"></span>
+                        </button>
+                    </form>
+                    <!-- Mapa -->
+                    <div class="c-contacto__col">
+                        <img src="img/ubicacion.png" style="height:500px" alt="" class="c-contacto__imagen">
+                        <div class="c-contacto__info">
+                            <ul class="c-contacto__lista">
+                                <li>
+                                    <i class="fa-solid fa-location-dot c-contacto__icono-info"></i>
+                                    Mislata - Valencia - España
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope c-contacto__icono-info"></i>
+                                    colomatormojl@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="c-footer">
+            <a href="#inicio" class="c-footer__arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="c-footer__redes">
+                <a href="https://www.linkedin.com/in/jlcoloma/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/JoseLuisColoma"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-slack"></i></a>
+            </div>
+            <span style="margin-right: 5px; font-size: 10px;"><i class="fa-sharp fa-regular fa-copyright"></i></span>
+            <span style="font-size: 12px; margin-right: 5px;">2023</span>
+            <span style="color: steelblue; font-size: 20px; margin-bottom: 10px;">JCT</span>
+            <span style="color: peru; font-size: 14px; margin-left: 1px;">DEV</span>
+        </footer>
 
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>

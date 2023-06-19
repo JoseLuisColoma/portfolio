@@ -1,12 +1,9 @@
-let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
+function mostrarOcultarMenu() {
+    var menu = document.getElementById("responsiveMenu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
     }
 }
 
@@ -16,14 +13,14 @@ function seleccionar(){
     menuVisible = false;
 }
 
-
+//Descargar CV
 let archivoDescargado = false;
 
 function descargarCV() {
-    // Verificar si el archivo ya ha sido descargado
+// Verificar si el archivo ya ha sido descargado
     if (archivoDescargado) {
         // El archivo ya ha sido descargado, mostrar el aviso
-        alert('El archivo ya ha sido descargado previamente.');
+        alert('El archivo ya ha sido descargado.\nSolo puedes descargar el CV una vez.');
         return;
     }
 

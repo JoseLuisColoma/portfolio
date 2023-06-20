@@ -11,7 +11,7 @@ html{
 }
 /* MENU */
 .c-contenedor-header {
-  background-color: transparent;
+  background-color: #1e2326;
   position: fixed;
   width: 100%;
   top: 0;
@@ -86,7 +86,7 @@ html{
 }
 
 .c-nav-reponsive{
-  display: none;
+  display: none !important;
 }
 
 /* SECCION INICIO */
@@ -291,7 +291,7 @@ html{
   transition: opacity 0.3s;
   font-family: 'Quicksand';
   font-size: 22px;
-  margin-to1: 10px;
+  margin-toP: 10px;
   opacity: 0;
 }
 
@@ -664,20 +664,18 @@ html{
   }
 
   .c-nav__responsive-menu {
-    display: none;
+    display: none ;
   }
 
   .c-nav {
-    display: none;
+    display: none !important;
   }
-
-
 
   .c-nav__responsive {
     display: block;
     position: absolute;
-    right: 25px;
-    top: 25px;
+    right: 10px;
+    top: 10px;
     background-color: steelblue;
     color: whitesmoke;
     font-size: 24px;

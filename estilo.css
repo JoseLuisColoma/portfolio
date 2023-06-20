@@ -654,8 +654,9 @@ html{
     font-size: 18px;
   }
 
-/* SECCION RESPONSIVE */
-@media screen and (max-width: 980px) {
+/* SECCION RESPONSIVA */
+
+@media screen and (max-width: 987px) {
   .c-nav__responsive {
     display: none;
   }
@@ -697,10 +698,6 @@ html{
     border-radius: 5px;
   }
 
-  .c-nav__responsive-menu.show {
-    display: block;
-  }
-
   .c-nav__responsive-menu a {
     display: block;
     color: whitesmoke;
@@ -709,7 +706,6 @@ html{
     padding: 5px;
   }
 }
-
 
 @media (max-width: 987px) {
   .c-sobremi__fila {
@@ -722,7 +718,6 @@ html{
   }
 }
 
-
 @media (max-width: 987px) {
   .c-contacto__fila {
     flex-direction: column;
@@ -734,39 +729,3 @@ html{
   }
 }
 
-
-
-
-/* Estilos para móviles 
-@media (max-width: 768px) {
-  .c-sobremi__interes {
-      width: calc(50% - 15px);
-  }
-}
-
-
-@media screen and (max-width:768px){
-    .c-sobremi .c-sobremi__fila{
-        display: block;
-    }
-    .c-sobremi .c-sobremi__fila .c-sobremi__col{
-        width: fit-content;
-    }
-    .c-portfolio .c-portfolio__gallery{
-        display: block;
-        width: 100%;
-    }
-    .c-portfolio .c-portfolio__gallery .c-project{
-        max-width: 100%;
-    }
-    .c-portfolio .c-portfolio__gallery .c-project img{
-        width: 100%;
-    }
-    .c-contacto .c-contacto__fila{
-        display: block;
-    }
-    .c-contacto .c-contacto__fila .c-contacto__col{
-        width: 100%;
-    }
-}
-*/

@@ -180,7 +180,7 @@ html{
   }
   
   .c-portfolio__titulo {
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Quicksand';
     text-align: center;
     padding: 20px 0;
@@ -250,7 +250,7 @@ html{
 }
 
 .c-tech__titulo {
-  font-size: 48px;
+  font-size: 40px;
   font-family: 'Quicksand';
   text-align: center;
   padding: 20px 0;
@@ -478,7 +478,7 @@ html{
   }
   
   .c-contacto__titulo {
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Quicksand';
     text-align: center;
     padding: 20px 0;

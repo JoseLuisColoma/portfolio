@@ -245,7 +245,7 @@ html{
 }
 
 .c-tech__content {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -259,23 +259,21 @@ html{
 
 .c-tech__gallery {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.c-tech-project {
+.c-tech__project {
   position: relative;
   max-width: 340px;
   height: fit-content;
-  margin: 10px;
+  margin: 30px;
   cursor: pointer;
 }
 
-.c-tech-project  img {
-  width: 100%;
+.c-tech__project  img {
   display: block;
-  height: 240px;
-  width: 340px;
+  height: 50px;
+  width: 50px;
 }
 
 .c-tech-project__overlay {
@@ -296,7 +294,7 @@ html{
 }
 
 .c-tech-project:hover .c-tech-project__overlay {
-  background: linear-gradient(steelblue);
+  background: linear-gradient(green);
   opacity: 1;
 }
 
@@ -306,7 +304,6 @@ html{
   transition: margin-bottom 0.3s;
   font-family: 'Quicksand';
 }
-
 
 /* SECCION SOBRE MI  */
 
@@ -712,6 +709,32 @@ html{
     padding: 5px;
   }
 }
+
+
+@media (max-width: 987px) {
+  .c-sobremi__fila {
+    flex-direction: column;
+  }
+
+  .c-sobremi__col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 987px) {
+  .c-contacto__fila {
+    flex-direction: column;
+  }
+
+  .c-contacto__col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
 
 
 /* Estilos para móviles 

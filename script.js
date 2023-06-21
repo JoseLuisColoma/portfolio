@@ -12,7 +12,7 @@ function mostrarOcultarBurger() {
         setTimeout(function() {
             menuBurger.style.display = "none";
             linksNav.style.display = "flex";
-        }, 5000);
+        }, 3000);
     }
 }
 

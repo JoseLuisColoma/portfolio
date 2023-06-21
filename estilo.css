@@ -9,6 +9,7 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
 /* MENU */
 .c-contenedor-header {
   background-color: #1e2326;
@@ -130,14 +131,13 @@ html{
     display: block;
     color: whitesmoke;
     text-decoration: none;
-    margin: 10px 0;
+    margin: 10px 0px;
     padding: 5px;
   }
 
   .c-nav__list {
     display: none !important;
   }
-
 }
 
 /* SECCION INICIO */

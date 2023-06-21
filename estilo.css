@@ -57,10 +57,11 @@ html{
 }
 
 .c-nav__item {
-  margin-right: 60px;
+  margin-right: 25px;
 }
 
 .c-nav__link {
+  font-size: 14px;
   text-align: none;
   color: steelblue;
   margin: 0;
@@ -75,6 +76,7 @@ html{
 
 .c-lang {
   color: steelblue;
+  text-decoration: none;
 }
 
 .c-lang__es {
@@ -85,9 +87,60 @@ html{
   margin-left: 5px;
 }
 
-.c-nav-reponsive{
-  display: none !important;
+.c-nav__responsive {
+  display: none;
 }
+
+.c-nav__responsive-menu {
+  display: none ;
+}
+
+@media screen and (max-width: 768px) {
+
+  .c-nav__responsive {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .c-nav__responsive:hover {
+    background-color: peru;
+  }
+
+  .c-nav__responsive-menu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .c-nav__responsive-menu a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  .c-nav__list {
+    display: none !important;
+  }
+
+}
+
+
 
 /* SECCION INICIO */
 
@@ -653,59 +706,6 @@ html{
     line-height: 50px;
     font-size: 18px;
   }
-
-/* SECCION RESPONSIVA */
-
-@media screen and (max-width: 987px) {
-  .c-nav__responsive {
-    display: none;
-  }
-
-  .c-nav__responsive-menu {
-    display: none ;
-  }
-
-  .c-nav {
-    display: none !important;
-  }
-
-  .c-nav__responsive {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-color: steelblue;
-    color: whitesmoke;
-    font-size: 24px;
-    padding: 6px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .c-nav__responsive:hover {
-    background-color: peru;
-  }
-
-  .c-nav__responsive-menu {
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 75px;
-    background-color: steelblue;
-    color: whitesmoke;
-    font-size: 16px;
-    padding: 6px;
-    border-radius: 5px;
-  }
-
-  .c-nav__responsive-menu a {
-    display: block;
-    color: whitesmoke;
-    text-decoration: none;
-    margin: 10px 0;
-    padding: 5px;
-  }
-}
 
 @media (max-width: 987px) {
   .c-sobremi__fila {

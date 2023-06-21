@@ -1,9 +1,18 @@
-function mostrarOcultarMenu() {
-    var menu = document.getElementById("responsiveMenu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
+function mostrarOcultarBurger() {
+    let menuBurger = document.getElementById("responsiveMenu");
+    let linksNav = document.getElementById("nav");
+
+    if (menuBurger.style.display === "block") {
+        menuBurger.style.display = "none";
+        linksNav.style.display = "flex"; // Mostrar los enlaces de navegación nuevamente
     } else {
-        menu.style.display = "block";
+        menuBurger.style.display = "block";
+        linksNav.style.display = "none"; // Ocultar los enlaces de navegación
+
+        setTimeout(function() {
+            menuBurger.style.display = "none";
+            linksNav.style.display = "flex";
+        }, 5000);
     }
 }
 

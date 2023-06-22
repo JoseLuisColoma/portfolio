@@ -309,22 +309,22 @@ html{
 }
 
 .c-tech__gallery {
-  display: flex;
-  justify-content: space-around;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-.c-tech__project {
+.c-tech-project {
   position: relative;
-  max-width: 340px;
-  height: fit-content;
+  color: whitesmoke;
   margin: 30px;
   cursor: pointer;
 }
 
-.c-tech__project  img {
+.c-tech-project__img {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
 
 .c-tech-project__overlay {

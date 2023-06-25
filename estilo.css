@@ -37,14 +37,14 @@ html{
 
 .c-logo__link {
   font-size: 36px;
-  color: steelblue;
+  color: whitesmoke;
   text-decoration: none;
 }
 
 .c-logo__text {
   font-size: 32px;
   font-family: 'Quicksand';
-  margin-left: 10px;
+  margin-left: 0px;
   color: peru;
 }
 
@@ -161,7 +161,7 @@ html{
     text-align: center;
     align-items: center;
     border-radius: 40px;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 .c-contenedor-img img {
@@ -174,9 +174,9 @@ html{
 }
 
 .c-titulo {
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
     font-family: 'Quicksand';
     font-weight: 900;
     color: peru;
@@ -311,42 +311,24 @@ html{
 .c-tech__gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:flex-start;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-.c-tech-project {
-  position: relative;
+.c-tech-project{
+  position: flex;
   color: whitesmoke;
   margin: 30px;
   cursor: pointer;
 }
 
 .c-tech-project__img {
-  display: block;
-  height: 100px;
-  width: 100px;
-}
-
-.c-tech-project__overlay {
-  position: absolute;
-  top: -10px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: steelblue;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: opacity 0.3s;
-  font-family: 'Quicksand';
-  font-size: 22px;
-  margin-toP: 10px;
-  opacity: 0;
-}
-
-.c-tech-project:hover .c-tech-project__overlay {
-  background: linear-gradient(green);
-  opacity: 1;
+  margin-right: 45px;
+  margin-bottom: 40px;
+  height: 75px;
+  width: 75px;
 }
 
 .c-tech-project__title {
@@ -418,9 +400,9 @@ html{
 
 .c-sobremi__col ul li span {
     background-color: peru;
-    padding: 8px;
+    padding: 4px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 4px;
     color: whitesmoke;
 }
 

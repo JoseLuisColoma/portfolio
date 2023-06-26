@@ -37,7 +37,7 @@ html{
 
 .c-logo__link {
   font-size: 36px;
-  color: whitesmoke;
+  color: peru;
   text-decoration: none;
 }
 
@@ -235,6 +235,7 @@ html{
     font-family: 'Quicksand';
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 40px;
     color: peru;
   }
   
@@ -265,7 +266,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(steelblue, rgba(28, 182, 152, .5));
+    background: linear-gradient(steelblue, rgba(70, 130, 180, .6));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,6 +306,7 @@ html{
   font-family: 'Quicksand';
   text-align: center;
   padding: 20px 0;
+  margin-bottom: 40px;
   color: peru;
 }
 
@@ -326,7 +328,7 @@ html{
 .c-tech-project__img {
   display: flex;
   margin-right: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   height: 75px;
   width: 75px;
 }
@@ -351,13 +353,14 @@ html{
     margin: auto;
 }
 
-.c-sobremi h2 {
-    font-size: 48px;
-    font-family: 'Quicksand';
-    text-align: center;
-    padding: 20px 0;
+.c-sobremi__titulo {
+  font-size: 40px;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  color: peru;
 }
-
 .c-sobremi__contenido p {
     font: 18px;
     line-height: 22px;
@@ -415,28 +418,18 @@ html{
 
 .c-sobremi__interes {
   width: calc(35% - 15px); /* Establece el ancho del interés con margen */
-  max-width: 150px; /* Establece un ancho máximo para evitar que se vuelvan demasiado grandes */
-  height: 100px;
+  max-width: 125px; /* Establece un ancho máximo para evitar que se vuelvan demasiado grandes */
+  height: 125px;
   background-color: steelblue;
+  font-size: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 65px;
+  margin-bottom: 30px;
   justify-content: center;
   transition: .3s;
-}
-
-.c-sobremi__interes {
-    width: 100px;
-    height: 100px;
-    background-color: steelblue;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
 }
 
 .c-sobremi__interes:hover {
@@ -444,7 +437,7 @@ html{
 }
 
 .c-sobremi__interes i {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
@@ -515,6 +508,7 @@ html{
     font-family: 'Quicksand';
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 40px;
     color: peru;
   }
   

@@ -30,9 +30,7 @@ html{
 }
 
 .c-logo {
-  font-family: 'Quicksand';
-  text-decoration: none;
-  font-weight: 900;
+  width: 175px;
 }
 
 .c-logo__link {
@@ -365,9 +363,10 @@ html{
 .c-tech__gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:center;
     margin-left: 40px;
-    margin-right: 40px;
+ 
+
   }
 
 .c-tech-project{
